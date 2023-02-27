@@ -28,4 +28,7 @@ public class Wallet{
     public IChargeable getSelectedCard() {
         return selectedCard;
     }
+    public void pay(int amount){
+        this.selectedCard.charge(amount);
+    }
 }

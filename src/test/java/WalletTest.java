@@ -28,8 +28,16 @@ public class WalletTest {
         johnsWallet.selectCard(amex);
         assertEquals(amex, johnsWallet.getSelectedCard());
     }
+    @Test
+    public void chargeACard(){
+        johnsWallet.addCard(amex);
+        johnsWallet.selectCard(amex);
+        johnsWallet.pay(50);
+        assertEquals(1945, amex.getAvailableCredit());
+        assertEquals("User has paid using credit card", amex.charge(0));
+    }
 
-    
+
 
 
 }
