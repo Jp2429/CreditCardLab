@@ -14,8 +14,11 @@ public class GiftCardTest {
     @Test
     public void hasBalance(){
         assertEquals(50, thanksGran.getBalance());
+    }
+    @Test
+    public void checkLog(){
 
-
+        assertEquals();
     }
 
 }
