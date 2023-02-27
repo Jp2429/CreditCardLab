@@ -18,7 +18,7 @@ public class GiftCardTest {
     @Test
     public void checkLog(){
 
-        assertEquals();
+        assertEquals(String.class, thanksGran.charge(5).getClass());
     }
 
 }
