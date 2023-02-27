@@ -9,4 +9,7 @@ public class GiftCard implements IChargeable{
     public boolean charge(int value) {
         return false;
     }
+    public int getBalance(){
+        return this.balance;
+    }
 }
