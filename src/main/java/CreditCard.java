@@ -11,7 +11,13 @@ public class CreditCard extends PaymentCard implements IChargeable {
     }
 
     @Override
-    public boolean charge(int value) {
-        return false;
+    public String charge(int value) {
+        double transactionCost=value*1.1;
+        if(transactionCost<this.availableCredit){
+            this.availableCredit-=transactionCost;
+            return "true";
+        }
+        return null;
+
     }
 }

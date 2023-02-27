@@ -6,8 +6,8 @@ public class GiftCard implements IChargeable{
     }
 
     @Override
-    public boolean charge(int value) {
-        return false;
+    public String charge(int value) {
+        return null;
     }
     public int getBalance(){
         return this.balance;
