@@ -15,7 +15,7 @@ public class CreditCard extends PaymentCard implements IChargeable {
         double transactionCost=value*1.1;
         if(transactionCost<this.availableCredit){
             this.availableCredit-=transactionCost;
-            return "true";
+            return "User has paid using credit card";
         }
         return null;
 

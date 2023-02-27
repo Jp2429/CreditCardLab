@@ -26,5 +26,10 @@ public class CreditCardTest {
     public void canGetAvailableCredit(){
         assertEquals(3000,creditCard.getAvailableCredit());
     }
+    @Test
+    public void canCharge(){
+        assertEquals("User has paid using credit card",creditCard.charge(50));
+        assertEquals(2945,creditCard.getAvailableCredit());
+    }
 
 }
