@@ -9,4 +9,7 @@ public class GiftCard implements IChargeable{
     public String charge(int value) {
         return null;
     }
+    public int getBalance(){
+        return this.balance;
+    }
 }
