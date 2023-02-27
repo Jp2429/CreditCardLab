@@ -19,5 +19,12 @@ public class CreditCardTest {
         assertEquals("23/04/2023",creditCard.getExpDate());
     }
     @Test
-    public void canGet
+    public void canGetSecurityNumber(){
+        assertEquals(12,creditCard.getSecurityNumber());
+    }
+    @Test
+    public void canGetAvailableCredit(){
+        assertEquals(3000,creditCard.getAvailableCredit());
+    }
+
 }
