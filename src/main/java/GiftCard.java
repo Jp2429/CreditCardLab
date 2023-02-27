@@ -13,7 +13,6 @@ public class GiftCard implements IChargeable{
     public int getBalance(){
         return this.balance;
     }
-
     public String log(int charge){
         String logMessage = "";
         logMessage.concat("\n Charging amount: " + String.valueOf(charge));

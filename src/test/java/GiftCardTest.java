@@ -13,11 +13,11 @@ public class GiftCardTest {
     }
     @Test
     public void hasBalance(){
-        assertEquals(50, thanksGran.getBalance());
+        int result = thanksGran.getBalance();
+        assertEquals(50, result);
     }
     @Test
     public void checkLog(){
-
         assertEquals(String.class, thanksGran.charge(5).getClass());
     }
 
